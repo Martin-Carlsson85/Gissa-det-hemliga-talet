@@ -13,7 +13,7 @@ namespace _1DV402.S2.L1A
         private int _count;
         private int _number;
 
-
+        //Metoden Initialize som tilldelas ett slumpat heltal i det slutna intervallet mellan 1 och 100. 
         public void Initialize()
         {
             Random myRandom = new Random();
@@ -24,10 +24,48 @@ namespace _1DV402.S2.L1A
         }
 
 
-        public bool MakeGuess()
+        public bool MakeGuess(int number)
         {
+            _count++;
 
+            int guessNumber = MaxNumberOfGuesses - _count++;
+
+            try
+            { 
+            
+                if (number == _number)
+                {
+                    Console.WriteLine("Grattis! {0} är det hemliga talet! Du klarade det på {1} antal försök", number, guessNumber);
+
+                    return true;
+                }
+
+                if (number < _number)
+                {
+                    Console.WriteLine("{0} är för lågt, du har nu {1} gissningar kvar", number, guessNumber);
+
+                    return false;
+                }
+                if (number > _number)
+                {
+                    Console.WriteLine("{0} är för högt, du har nu {1} gissningar kvar", number, guessNumber);
+
+                    return false;
+                }
+                if (number )
+
+               return false;
+            
+
+            
+           
         }
 
+
+        public SecretNumber()
+        {
+
+            Initialize();
+        }
     }
 }
