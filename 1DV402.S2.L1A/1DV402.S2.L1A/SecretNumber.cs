@@ -52,7 +52,7 @@ namespace _1DV402.S2.L1A
 
                     return false;
                 }
-                if (number )
+                if (number< )
 
                return false;
             
