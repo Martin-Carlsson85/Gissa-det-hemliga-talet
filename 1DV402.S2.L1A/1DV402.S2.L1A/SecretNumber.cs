@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1DV402.S2.L1A
 {
+<<<<<<< HEAD
     public class SecretNumber
     {
         //Deklaration av konstant och varaibler.
@@ -67,5 +68,10 @@ namespace _1DV402.S2.L1A
 
             Initialize();
         }
+=======
+    class SecretNumber
+    {
+
+>>>>>>> 39eb31158702ca9924a140b94ad1e0188e4529f3
     }
 }

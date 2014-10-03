@@ -68,6 +68,12 @@ namespace _1DV402.S2.L1A
                 Console.CursorVisible = true;
                 Console.ResetColor();
             } while (continueGame);
+
+
+
+
         }
+        
+        
     }
 }
